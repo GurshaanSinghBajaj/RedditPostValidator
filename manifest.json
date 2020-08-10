@@ -1,0 +1,28 @@
+{
+    "name": "Gurshaan_NoComment",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Toggle comment visibility on YouTube.com",
+    "browser_action": {
+        "default_popup": "./index.html",
+        "default_title": "Open the popup",
+        "default_icon":"./48Reddit-icon.png"
+    },
+    "background" :
+    {
+      "persistent":false,
+      "scripts":["background.js"]
+    },
+    "content_scripts":
+    [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["jquery-3.4.1.min.js","content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons" : {
+      "48" : "48Reddit-icon.png",
+      "128" : "128Reddit-icon.png"
+    }
+  }
