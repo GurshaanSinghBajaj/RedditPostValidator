@@ -5,3 +5,7 @@ The aim of this project is to provide the end-users with capability to check and
 Used BERT for text classification and used the FNC dataset for classification purposes.
 
 Model is not present in the repository.
+
+![](Screenshot/Screenshot%20(203).png)
+
+![](Screenshot/Screenshot%20(204).png)
